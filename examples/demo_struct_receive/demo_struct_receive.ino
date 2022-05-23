@@ -1,4 +1,4 @@
-#include <simpleSerial.h>
+#include "simpleSerial.h"
 
 #define LED 13
 
@@ -21,6 +21,8 @@ void setup() {
 }
 
 void loop() {
+
+  simpleSerial :: screen_bytes();
 
   if( simpleSerial :: simple_serial_available() )
   {
